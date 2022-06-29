@@ -78,6 +78,20 @@ nav ul li{
 nav ul li a{
     text-decoration: none;
     color: white;
+    position:relative;
+}
+nav ul li a:after{
+    position:absolute;
+    content:'';
+    width:0px;
+    height:3px;
+    background:red;
+    right:0px;
+    bottom:-8px;
+    transition:0.9s;
+}
+nav ul li a:hover:after{
+    width:100%;
 }
 #menuBtn{
     width: 0px;
